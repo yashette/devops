@@ -1,0 +1,9 @@
+docker login -u yashette -p glpat-weW4bwGUHS2UNts7zBt7 registry.gitlab.com
+
+# Tirer l'image depuis le registre
+docker pull registry.gitlab.com/max9933701/springboot/devops:latest
+
+# Exécuter le conteneur avec l'image récupérée
+docker run -d --name conteneur -p 8080:80 registry.gitlab.com/max9933701/springboot/devops:latest
+
+
