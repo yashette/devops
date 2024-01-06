@@ -1,0 +1,5 @@
+docker login -u yashette -p glpat-weW4bwGUHS2UNts7zBt7 registry.gitlab.com
+
+docker tag devops:latest registry.gitlab.com/max9933701/springboot/devops:latest
+
+docker push registry.gitlab.com/max9933701/springboot/devops:latest
